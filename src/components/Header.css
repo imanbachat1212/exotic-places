@@ -1,0 +1,132 @@
+.snip1226 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: fixed; /*to set nav on the video*/
+  width: 100%;
+  z-index: 99;
+  margin-left: 10%;
+  /* position: absolute; */
+}
+h1 {
+  position: fixed;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+}
+.logo {
+  /* position: absolute;
+  left: 0%;
+  top: 0%; */
+  width: 15%;
+  height: 20%;
+  position: fixed;
+  top: 0px;
+  left: 10px;
+  z-index: 1000;
+}
+.snip1226 * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease; /*this to  flip over the line*/
+  transition: all 0.35s ease;
+}
+.snip1226 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  overflow: hidden;
+}
+.snip1226 a {
+  padding: 0.3em 0;
+  color: rgba(179, 33, 33, 0.5);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+.snip1226 a:before,
+.snip1226 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1226 a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: '';
+  background-color: #e67e22;
+}
+.snip1226 a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: rgb(228, 30, 30);
+  white-space: nowrap;
+}
+.snip1226 li:hover a,
+.snip1226 .current a {
+  transform: translateY(100%);
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .logo{
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color:  orange;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    width: 50%;
+    border-radius: 10%;
+    
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #d0d8d8;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type='checkbox']:checked ~ .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: 250px;
+   
+  }
+
+}
+
+
