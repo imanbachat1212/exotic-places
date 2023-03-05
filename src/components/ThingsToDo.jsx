@@ -14,17 +14,17 @@ const ThingsToDo = () => {
                   <div class="ribbon-tag">Hot Deals</div>
                 </div>
                 <div class="list-group">
-                  <a href="#" class="list-group-item">
+                  <a href="ThingsToDo" class="list-group-item">
                     <h4 class="heading">Honeymoon Packages</h4>
                     <p class="text">An all-inclusive honeymoon package typically includes accommodations, meals, drinks, activities, and entertainment.Exotic Places offer you airfare and ground transportation. </p>
                   </a>
 
-                  <a href="#" class="list-group-item active">
+                  <a href="ThingsToDo" class="list-group-item active">
                     <h4 class="heading">Family trip </h4>
                     <p class="text">Of all the holidays you take, family vacations are most likely to create the best memories of your lifetime. Please Click for "At Your Service"</p>
                   </a>
 
-                  <a href="#" class="list-group-item">
+                  <a href="ThingsToDo" class="list-group-item">
                     <h4 class="heading">Boutique & River Cruises and Sailing Adventures Worldwide</h4>
                     <p class="text"> If you look at our cruise suggestions, you are bound to find a cruise … and destination to suit your style and interests.
 
@@ -43,17 +43,17 @@ const ThingsToDo = () => {
               <div class="ribbon-tag">Trending</div>
             </div>
             <div class="list-group">
-              <a href="#" class="list-group-item">
+              <a href="ThingsToDo" class="list-group-item">
                 <h4 class="heading"> “Rose City” Petra </h4>
                 <p class="text">Explore the unique ancient “Red Rose” city of Petra. Visit the many sights, learning the history of this city that was forgotten for almost 1000 years before being rediscovered in 1812.</p>
               </a>
 
-              <a href="#" class="list-group-item active">
+              <a href="ThingsToDo" class="list-group-item active">
                 <h4 class="heading"> “El Gouna” Egypt</h4>
                 <p class="text">Take a break from the stresses of everyday life and let your mind, body and soul relax on your El Gouna vacation. There's nothing more invigorating than the cool sea breeze and the soothing melody of waves lapping at the shore.</p>
               </a>
 
-              <a href="#" class="list-group-item">
+              <a href="ThingsToDo" class="list-group-item">
                 <h4 class="heading">“Yakuve Island” Fiji</h4>
                 <p class="text"> Enjoy a luxurious escape to the Yakuve Island of Fiji.You’ll enjoy exclusive accommodations in a gorgeous landscape and enjoy the widest range of leisure options in all of Fiji, from snorkelling to diving to horseback riding along the beach.</p>
               </a>
