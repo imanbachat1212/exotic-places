@@ -36,41 +36,31 @@ const Footer = () => {
             </h3>
             <ul>
               <li>
-                <a href='home'>
+                <a href='#home'>
                   Home
                 </a>
               </li>
               <li>
-                <a href='PlacesToGo' data-hover='Place To Go' id='PlacesToGo'>
+                <a href='#PlacesToGo' data-hover='Place To Go' id='PlacesToGo'>
                   Place To Go
                 </a>
               </li>
               <li>
-                <a href='ThingsToDo' data-hover='Things To Do'>
+                <a href='#ThingsToDo' data-hover='Things To Do'>
                   Things To Do
                 </a>
               </li>
               <li id='BookYourTrip'>
-                <a href='BookYourTrip' >
+                <a href='#BookYourTrip' >
                   Book Your Trip
                 </a>
               </li>
-              <li>
-                <a href='Contact' data-hover='Contact'>
-                  Contact
-                </a>
-              </li>
+
             </ul>
           </div>
 
         </div>
-        <hr />
-        <div className="copy">
-          {/* <h3>
-            Copyright &copy; <span id="fdiff">T</span>rabebo 2020-21 | All
-            Rights Reserved
-          </h3> */}
-        </div>
+
       </div>
     </>)
 }
