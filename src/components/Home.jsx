@@ -5,11 +5,12 @@ import videoBg from '../assets/videoBg.mp4'
 import ReactRotatingText from 'react-rotating-text'
 
 const Home = () => {
+
   return (
     <>
       <div className='main' id='home'>
         <div className="overlay"></div>
-        <video id="video" src={videoBg} autoPlay loop muted />
+        <video id="video" src={videoBg} autoPlay loop muted playsInline />
         {/* <iframe src="https://drive.google.com/file/d/1D7dZ7JqWU4yih7me-jOS-XxdpBNmcCJz/preview" allow="autoplay" title='play'></iframe> */}
 
       </div>
