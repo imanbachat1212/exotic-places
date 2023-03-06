@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <div className='main' id='home'>
         <div className="overlay"></div>
-        <video id="video" src={videoBg} autoPlay loop muted playsInline />
+        <video id="video" src={videoBg} autoPlay={true} loop muted playsInline />
         {/* <iframe src="https://drive.google.com/file/d/1D7dZ7JqWU4yih7me-jOS-XxdpBNmcCJz/preview" allow="autoplay" title='play'></iframe> */}
 
       </div>
