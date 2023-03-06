@@ -52,7 +52,6 @@
     border-radius: 5px;
     text-decoration: none;
     color: #fff;
-    /* padding-left: -20%; */
   }
   
   .quicklinks ul li a:hover {
@@ -79,7 +78,7 @@
     .branch,
     .quicklinks,
     .follow {
-      width: 100%;
+      width: 90%;
       text-align: left;
     }
    
@@ -102,9 +101,7 @@
     .fbox {
       flex-direction: column;
     }
-    .footer hr {
-      width: 100%;
-    }
+   
     .branch #map{
       width: 55%;
     }

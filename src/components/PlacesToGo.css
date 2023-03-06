@@ -63,7 +63,8 @@ img{
 }
 button.rec-dot{
 	background-color:lightsalmon;
-	box-shadow: 0 0 1px 3px orangered
+	box-shadow: 0 0 1px 3px orangered;
+	margin-top: -35%;
   }
   
   button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
