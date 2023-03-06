@@ -1,4 +1,13 @@
-.snip1226 {
+
+/* 
+.navbar {
+  background-color: rgb(22, 7, 36);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 5rem;
+} */
+.navbar {
   font-family: 'Raleway', sans-serif;
   text-align: center;
   text-transform: uppercase;
@@ -7,11 +16,6 @@
   width: 100%;
   z-index: 99;
   margin-left: 10%;
-}
-h1 {
-  position: fixed;
-  font-weight: 500;
-  font-family: 'Raleway', sans-serif;
 }
 .logo {
 
@@ -22,18 +26,25 @@ h1 {
   left: 10px;
   z-index: 1000;
 }
-.snip1226 * {
+.left h1 {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+
+
+.right * {
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease; /*this to  flip over the line*/
   transition: all 0.35s ease;
 }
-.snip1226 li {
+.right li {
   display: inline-block;
   list-style: outside none none;
   margin: 0 1.5em;
   overflow: hidden;
 }
-.snip1226 a {
+.right a {
   padding: 0.3em 0;
   color: rgba(179, 33, 33, 0.5);
   position: relative;
@@ -42,13 +53,13 @@ h1 {
   margin: 0;
   text-decoration: none;
 }
-.snip1226 a:before,
-.snip1226 a:after {
+.right a:before,
+.right a:after {
   position: absolute;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.snip1226 a:before {
+.right a:before {
   bottom: 100%;
   display: block;
   height: 3px;
@@ -56,7 +67,7 @@ h1 {
   content: '';
   background-color: #e67e22;
 }
-.snip1226 a:after {
+.right a:after {
   padding: 0.3em 0;
   position: absolute;
   bottom: 100%;
@@ -65,65 +76,70 @@ h1 {
   color: rgb(228, 30, 30);
   white-space: nowrap;
 }
-.snip1226 li:hover a,
-.snip1226 .current a {
+.right li:hover a,
+.right .current a {
   transform: translateY(100%);
 }
-
-input[type='checkbox'] {
+.checkBtn {
   display: none;
 }
 
-/*HAMBURGER MENU*/
-
-.hamburger {
+#check {
   display: none;
-  font-size: 24px;
-  user-select: none;
 }
 
-/* APPLYING MEDIA QUERIES */
+.checkBtn {
+  cursor: pointer;
+  font-size: 30px;
+  float: left;
+  color: orangered;
+  position: fixed;
+  padding-left: 80%;
+  top: 0;
+  
+}
 
-@media (max-width: 768px) {
-  .logo{
-    display: none;
+@media screen and (max-width:805px) {
+  .list {
+      width: 100%;
+      height: 30vh;
+      background-color: peru;
+      border-radius: 10%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 100%;
+      top: 0%;
+      background: fixed;
+      transition: all 1s;
+      overflow: hidden;
+      
   }
-  .menu {
-    display: flex;
-    flex-direction: column;
+  .right a {
+    padding: 0.3em 1.2rem;
+    color: rgba(241, 91, 5, 0.5);
     position: relative;
-    background-color:  orange;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    width: 50%;
-    border-radius: 10%;
-    
-  }
-
-  .menu li:hover {
     display: inline-block;
-    background-color: #d0d8d8;
-    transition: 0.3s ease;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+    background-color: #52351c;
+    border-radius: 40%;
   }
 
-  .menu li + li {
-    margin-top: 12px;
+  #check {
+      display: none;
   }
 
-  input[type='checkbox']:checked ~ .menu {
-    display: none;
+  .checkBtn {
+      display: block;
   }
 
-  .hamburger {
-    display: block;
-    margin-left: 240px;
-   
+  #check:checked~ul {
+      left: 0%;
   }
-
+.logo{
+  display: none;
 }
-
-
+}
