@@ -7,7 +7,6 @@
   width: 100%;
   z-index: 99;
   margin-left: 10%;
-  /* position: absolute; */
 }
 h1 {
   position: fixed;
@@ -15,9 +14,7 @@ h1 {
   font-family: 'Raleway', sans-serif;
 }
 .logo {
-  /* position: absolute;
-  left: 0%;
-  top: 0%; */
+
   width: 15%;
   height: 20%;
   position: fixed;
@@ -94,7 +91,7 @@ input[type='checkbox'] {
   .menu {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     background-color:  orange;
     right: 0;
     left: 0;

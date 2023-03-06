@@ -42,14 +42,10 @@ const Header = () => {
               Book Your Trip
             </a>
           </li>
-          <li>
-            <a href='#Contact' data-hover='Contact'>
-              Contact
-            </a>
-          </li>
+
         </ul>
-        {/* <div className='&rdquo;menu&rdquo'>...</div> */}
       </div>
+
 
     </>
   )

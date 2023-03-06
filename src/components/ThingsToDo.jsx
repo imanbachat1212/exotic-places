@@ -4,7 +4,7 @@ import './ThingsToDo.css'
 const ThingsToDo = () => {
   return (
     <>
-      <h2>we promise to get you coverd on any occasion!</h2>
+      <h2 id='ThingsToDo'>we promise to get you coverd on any occasion!</h2>
       <div className='aa'>
         <div className='all' >
           <div class="horizontal">
